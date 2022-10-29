@@ -1,0 +1,17 @@
+/* 标签 */
+/* 醒目的格式 */
+/* .protyle-wysiwyg span[data-type="tag"] {
+	font-size: 90%;
+	border-radius: 3px;
+	padding:0px 6px 2px 6px;
+	color: var( --b3-theme-on-background)!important;
+	border-bottom:none !important; 
+	background-color:var(--b3-font-background7);
+} */
+
+/* 和引用、超链接一样的颜色的格式 */
+.protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    border-bottom: 2px solid var(--b3-protyle-inline-link-color);
+    color: var(--b3-protyle-inline-link-color);
+    transition: var(--b3-transition);
+}

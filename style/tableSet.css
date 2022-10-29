@@ -1,0 +1,56 @@
+/* 表格 */
+.b3-typography table, .protyle-wysiwyg table{
+	font-weight:500;
+	border-radius:5px;
+	overflow:hidden;
+	width: 100%;
+	display: table;
+	box-shadow: var(--b3-border-color) 0px 0px 0px 1px; 
+}
+
+.protyle-wysiwyg table tbody tr{
+	background-color:var(--b3-theme-background);
+
+}
+/* 自定义表格宽度 */
+.protyle-wysiwyg div.table[data-node-id]{
+    width: calc(100% - 8px);
+}
+
+.protyle-wysiwyg [data-node-id][custom-f~=auto] table {
+    width: auto !important;
+    white-space: pre;
+}
+
+/* 表头和表行格式一致 */
+.protyle-wysiwyg [data-node-id][custom-t~=biaotou] table th {
+    font-weight: normal !important;
+    color: inherit !important;
+    background-color: var(--b3-theme-background) !important;
+}
+/* 冻结表头样式 */
+.protyle-wysiwyg div.table[data-node-id][custom-t~=dongjie] table {
+  /* 表格滚动条 */
+	display: inline-block;
+	overflow-y: auto!important;
+	max-height: 50vh;
+	width:unset;
+	border-radius:0px;
+}
+.protyle-wysiwyg div.table[data-node-id][custom-t~=dongjie] table > thead {
+	position: sticky;
+	top: 1px;
+	outline: 1px solid var(--b3-theme-primary-lighter);
+	z-index: 1;
+}
+/* 竖表头格式 */
+.protyle-wysiwyg [data-node-id][custom-t~=vbiaotou] table th {
+    font-weight: normal !important;
+    color: inherit !important;
+    background-color: var(--b3-theme-background) !important;
+}
+.protyle-wysiwyg [data-node-id][custom-t~=vbiaotou] table tr th:first-child,
+.protyle-wysiwyg [data-node-id][custom-t~=vbiaotou] table tr td:first-child{
+    font-weight: bold !important;
+    background-color: var(--b3-theme-surface) !important;
+}

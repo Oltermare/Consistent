@@ -1,0 +1,21 @@
+.block__popover{
+    width: 30vw;
+    min-height: 270px;
+}
+
+body > div.block__popover.block__popover--move.block__popover--open > div.block__icons.block__icons--border{
+	height: 25px;
+}
+
+.block__icons--border{
+    background-color: var(--b3-theme-background);
+}
+
+/* .block__popover>.block__content>.protyle>.protyle-wysiwyg>.h2{
+    border-bottom: 0px;
+    font-size: 1.3em;
+} */
+
+/* .protyle-content {
+    font-size: 16px !important;
+} */

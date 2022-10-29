@@ -1,0 +1,7 @@
+/* 标题、列表折叠 */
+.protyle-wysiwyg [data-type="NodeHeading"][fold="1"]:not(.li) [spellcheck="false"]:after,
+.protyle-wysiwyg [data-type="NodeList"][fold="1"]:not(.li) [spellcheck="false"]:after,
+.protyle-wysiwyg [data-type="NodeListItem"].li[fold="1"]>div:nth-child(2)>[spellcheck="false"]::after {
+    content: " ...";
+    color: var(--b3-theme-primary);
+}

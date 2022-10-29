@@ -1,0 +1,11 @@
+/* 高亮挖空效果（属性w=w）*/
+.protyle-wysiwyg [data-node-id][custom-w~="w"] span[data-type~=mark]{
+    color: transparent;
+    border-bottom: 2px solid var(--b3-theme-on-background);
+    /* transition: color 0.1s ease-in-out !important; */
+	background-color: transparent;
+}
+.protyle-wysiwyg [data-node-id][custom-w~="w"] span[data-type~=mark]:hover{
+    color: var(--b3-theme-on-background);
+	/* transition: color 0.1s ease-in-out;  */
+}
