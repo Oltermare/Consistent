@@ -1,9 +1,9 @@
 ## 介绍
 ### 特点
 
-Consistent主题修改自官方主题，主要有以下特点
+Consistent主题修改自官方主题，主要有以下特点，前排提示佛系更新
 
-1. 4in1，即一个主题可以在移动端、桌面端、明亮模式、黑暗模式中同时使用，在移动端按钮增大，更方便触摸
+1. 4in1，即一个主题可以在**移动端、桌面端、明亮模式、黑暗模式**中同时使用，在移动端按钮增大，更方便触摸
 
 2. 强调阅读的一致性，将引用、超链接、标签设置为相近但不同的样式
 
@@ -12,6 +12,33 @@ Consistent主题修改自官方主题，主要有以下特点
 4. 增加标题样式、折叠样式的区分度
 
 5. 尽量减少体积和js代码，提高加载速度
+
+### 预览
+
+![image](https://user-images.githubusercontent.com/64324088/198844641-b5eb6af4-f0a2-49ed-bd57-3ae29fb9a705.png)
+
+嵌入块多个查询结果显示效果：
+
+![image](https://user-images.githubusercontent.com/64324088/198844666-11c9072d-d906-4bb7-b1dc-912b3c1d5419.png)
+
+...
+
+**手机端效果：**
+
+增大相关触摸面积
+
+![image](https://user-images.githubusercontent.com/64324088/198844829-deb7def5-f22d-4257-9e0f-5365f4c9ec18.png)
+
+通用菜单过长可滚动，不用收起键盘
+
+![image](https://user-images.githubusercontent.com/64324088/198844879-33398c1f-9d68-43b4-84b8-d783be663366.png)
+
+编辑工具条，浮动工具条增宽
+
+![image](https://user-images.githubusercontent.com/64324088/198844913-0a22d5ac-37cc-459f-8c5f-dce6befdb663.png)
+
+...
+
 
 ### 手机安装主题方法
 
