@@ -15,7 +15,8 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 ### 预览
 
-![image](https://user-images.githubusercontent.com/64324088/198844641-b5eb6af4-f0a2-49ed-bd57-3ae29fb9a705.png)
+![image](https://user-images.githubusercontent.com/64324088/198844972-f45d6871-6c20-46b3-8af1-0f7c2dfad5dc.png)
+
 
 嵌入块多个查询结果显示效果：
 
