@@ -1,0 +1,28 @@
+/* 嵌入块分割线加粗*/
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed{
+	border-top: 0px dashed var(--b3-border-color);
+    margin: 0px 0px 8px 0px;
+    border-radius: 4px;
+    background-color: var(--b3-theme-surface);
+}
+/* 嵌入块更改样式 */
+.protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
+    background-color: transparent;
+    border-left: none;
+    max-width: 100%;
+}
+
+/* 嵌入块内标题修改 */
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h1{
+    font-size: 1.4em;
+}
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h2{
+    border-bottom: 0px;
+    font-size: 1.3em;
+}
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h3{
+    font-size: 1.2em;
+}
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h4{
+    font-size: 1.1em;
+}

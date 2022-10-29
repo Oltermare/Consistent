@@ -1,0 +1,4 @@
+.protyle-task--done{
+	color: var(--b3-font-color1);
+	text-decoration:none;
+}

@@ -1,0 +1,5 @@
+:root{
+
+    	/*ctrlp*/
+	--b3-list-item--meta: var(--b3-theme-on-surface);
+}

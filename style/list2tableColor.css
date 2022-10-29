@@ -1,0 +1,10 @@
+:root{
+
+    --b3-layout-resize: var(--b3-theme-on-background);
+    
+}
+
+/* .list[data-node-id][data-type="NodeList"][custom-f="bg"] .li>:before { */
+.list[custom-f="bg"] [data-node-id].li:before {    
+    border-left: 0px solid var(--b3-theme-background-light);
+}

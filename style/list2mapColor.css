@@ -1,0 +1,12 @@
+	
+   :root { 
+    /*导图*/
+	/* --b3-border-daotu: 2px solid #ffb8b8; */
+   --b3-border-daotu: 2px solid var(--b3-card-info-color);
+	/* --b3-block-daotu:#FFF; */
+   --b3-block-daotu: var(--b3-theme-background);
+   }
+
+   .protyle-wysiwyg *[custom-f="dt"] .li div>div[spellcheck="false"]{
+      box-shadow: var(--b3-theme-on-background) 0px 0px 0px 1px, var(--b3-theme-on-background) 0px 2px 4px;
+   }

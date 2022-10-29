@@ -1,0 +1,15 @@
+:root{
+    --kbline-boarditem-minwidth: 14rem;/*看板卡片的最小宽度*/
+    --kb--li--background:var(--b3-theme-background);
+}
+.protyle-wysiwyg *[custom-f~=kb] .li .list .protyle-action {
+    position: absolute;
+    top: 7px;
+    transform: none;
+    border-radius: 3px;
+    opacity:0.3; 
+}
+
+.protyle-wysiwyg *[custom-f~=kb] .li .li{
+	box-shadow: var(--b3-theme-on-background) 0px 0px 0px 1px, var(--b3-theme-on-background) 0px 2px 4px;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Consistent",
+  "author": "Oltermare",
+  "url": "https://github.com/Oltermare",
+  "version": "1.0.0",
+  "modes": [
+    "light",
+    "dark"
+  ]
+}
