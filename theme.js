@@ -2447,7 +2447,9 @@ function TagStyle(){
     button.id="tagStyleDistinct"
     button.className="b3-menu__item"
     button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">标签改为明显样式</span></button>'
-    button.onclick=loadStyle("/appearance/themes/Consistent/themeMod/tagStyleDistinct.css", "tagStyleDistinct")
+    button.onclick= function() {
+        window.theme.loadStyle("/appearance/themes/Consistent/themeMod/tagStyleDistinct.css", "tagStyleDistinct")
+    }
     return button
 }
 
