@@ -1,4 +1,4 @@
-/* 嵌入块分割线加粗*/
+/* 嵌入块分块*/
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed{
 	border-top: 0px dashed var(--b3-border-color);
     margin: 0px 0px 8px 0px;

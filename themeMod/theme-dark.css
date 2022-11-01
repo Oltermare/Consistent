@@ -3,7 +3,7 @@
 :root {
     /* dark主题新增配色 */
     --b3-link: #9bbbdc;
-    --b3-link-lighter:rgb(155, 187, 220, 0.25);
+    --b3-link-lighter:rgb(155, 187, 220, 0.1);
     --b3-list-fold:rgba(154, 160, 166, .4);
 
     /* 主色 */
