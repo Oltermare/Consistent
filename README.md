@@ -15,9 +15,11 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 ### 预览
 
-![image](assets/image-20221101103752-a6hzoxl.png)
+![image](https://user-images.githubusercontent.com/64324088/199147946-b081ae04-d437-4b46-82c2-4bab0c051ac0.png)
 
-![image](assets/image-20221101103852-xsga73r.png)
+![image](https://user-images.githubusercontent.com/64324088/199147967-d14044a3-c8d6-4194-9fb9-f2e003da17f5.png)
+
+
 
 **手机端效果：**
 
