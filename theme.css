@@ -24,6 +24,8 @@
 :root {
     /* light主题新增配色 */
     --b3-link:#106ba3;
+    --b3-link-lighter:rgb(16, 107, 163, 0.25);
+    --b3-list-fold:rgba(95, 99, 104, .4);
 
     /* 主色 */
     --b3-theme-primary: #3573f0;
