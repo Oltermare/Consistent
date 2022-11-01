@@ -11,7 +11,20 @@
 
 /* 和引用、超链接一样的颜色的格式 */
 .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
+    border-bottom: 2px solid var(--b3-link);
+    color: var(--b3-link);
+    transition: var(--b3-transition);
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=tag]::before {
+	content: "#";
+    border-bottom: 2px solid var(--b3-link);
+    color: var(--b3-link);
+    transition: var(--b3-transition);
+}
+
+/* 亮蓝色 */
+/* .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
     border-bottom: 2px solid var(--b3-protyle-inline-link-color);
     color: var(--b3-protyle-inline-link-color);
     transition: var(--b3-transition);
-}
+} */
