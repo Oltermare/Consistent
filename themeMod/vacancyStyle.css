@@ -1,0 +1,11 @@
+/* 高亮挖空效果（全局）*/
+.protyle-wysiwyg [data-node-id] span[data-type~=mark]{
+    color: transparent;
+    border-bottom: 2px solid var(--b3-theme-on-background);
+    /* transition: color 0.1s ease-in-out !important; */
+	background-color: transparent;
+}
+.protyle-wysiwyg [data-node-id] span[data-type~=mark]:hover{
+    color: var(--b3-theme-on-background);
+	/* transition: color 0.1s ease-in-out;  */
+}

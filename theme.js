@@ -2398,7 +2398,7 @@ function mobileStyle(){
 
 
 
-// --------------------------高亮转挖空-------------------------------------------------
+// --------------------------菜单-其他选项-------------------------------------------------
 
 function InsertMenuItem2(selectid,selecttype){
     let commonMenu = document.getElementById("commonMenu")
@@ -2416,13 +2416,13 @@ function InsertMenuItem2(selectid,selecttype){
     }
 }
 
-function RecoverMenu(){
-    let button = document.createElement("button")
-    button.id = "recoverMenu"
-    button.className = "b3-menu__item b3-menu__item--readonly"
-    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label"><div style="margin-left: -18px;white-space: nowrap;">点击此收起键盘</div></span></button>'
-    return button
-}
+// function RecoverMenu(){
+//     let button = document.createElement("button")
+//     button.id = "recoverMenu"
+//     button.className = "b3-menu__item b3-menu__item--readonly"
+//     button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label"><div style="margin-left: -18px;white-space: nowrap;">点击此收起键盘</div></span></button>'
+//     return button
+// }
 
 function SubOption (selectid,selecttype){
     let button = document.createElement("button")
@@ -2438,26 +2438,47 @@ function SubOptionMenu(selectid,selecttype,className = 'b3-menu__submenu') {
     node.className = className;
     node.appendChild(FillIn(selectid))
     node.appendChild(FillInOff(selectid))
-    node.appendChild(TagStyle())
+    node.appendChild(MenuLoadStyleButton("tagStyleButton","标签样式切换","tagStyleDistinct","/appearance/themes/Consistent/themeMod/tagStyleDistinct.css"))
+    node.appendChild(MenuLoadStyleButton("linkIconStyleButton","网址前图标切换","linkIconStyle","/appearance/themes/Consistent/themeMod/linkIconDisable.css"))
+    node.appendChild(MenuLoadStyleButton("vacancyButton","全局挖空切换","vacancyStyle","/appearance/themes/Consistent/themeMod/vacancyStyle.css"))
     return node;
 }
 
-function TagStyle(){
-    let button = document.createElement("button")
-    button.id="tagStyleDistinct"
-    button.className="b3-menu__item"
-    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">标签改为明显样式</span></button>'
-    button.onclick= function() {
-        window.theme.loadStyle("/appearance/themes/Consistent/themeMod/tagStyleDistinct.css", "tagStyleDistinct")
+function MenuLoadStyleButton(buttonid,text,styleid,stylePath){
+    let button = document.createElement("button");
+    button.id=buttonid;
+    button.className="b3-menu__item";
+    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">'+text+'</span></button>';
+    if (document.getElementById(styleid) == null){
+        button.onclick = function(){
+            window.theme.loadStyle(stylePath,styleid);
+            document.getElementById('commonMenu').setAttribute("class","b3-menu fn__none");
+        }
+    } else {
+        button.onclick = function(){
+            document.getElementById(styleid).remove();
+            document.getElementById('commonMenu').setAttribute("class","b3-menu fn__none");
+        }
     }
     return button
 }
+
+// function TagStyle(){
+//     let button = document.createElement("button")
+//     button.id="tagStyleDistinct"
+//     button.className="b3-menu__item"
+//     button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">标签改为明显样式</span></button>'
+//     button.onclick= function() {
+//         window.theme.loadStyle("/appearance/themes/Consistent/themeMod/tagStyleDistinct.css", "tagStyleDistinct")
+//     }
+//     return button
+// }
 
 function FillIn(selectid){
     let button = document.createElement("button")
     button.id="fillin"
     button.className="b3-menu__item"
-    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">高亮转填空</span></button>'
+    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">段落挖空效果</span></button>'
     button.setAttribute("data-node-id",selectid)
     button.setAttribute("custom-attr-name","w")
     button.setAttribute("custom-attr-value","w")
@@ -2469,7 +2490,7 @@ function FillIn(selectid){
     let button = document.createElement("button")
     button.id="fillinoff"
     button.className="b3-menu__item"
-    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">恢复高亮</span></button>'
+    button.innerHTML='<svg class="b3-menu__icon" style=""><use xlink:href="#"></use></svg><span class="b3-menu__label" style="">段落挖空取消</span></button>'
     button.setAttribute("data-node-id",selectid)
     button.setAttribute("custom-attr-name","w")
     button.setAttribute("custom-attr-value","")
