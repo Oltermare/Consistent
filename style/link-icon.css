@@ -3,6 +3,7 @@
 .b3-typography a:not(:empty)::before,
 .protyle-wysiwyg [data-node-id] a:not(:empty)::before {
     display: inline-block;
+    /* display:none; */
     position: relative;
     background-repeat: no-repeat;
     background-size: 1em 1em;
