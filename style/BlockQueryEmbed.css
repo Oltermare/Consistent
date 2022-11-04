@@ -26,3 +26,5 @@
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h4{
     font-size: 1.1em;
 }
+
+/* 面包屑修改见 breadcrumb.css */
