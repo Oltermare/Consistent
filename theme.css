@@ -5,6 +5,7 @@
 @import url(style/link.css);/* 链接样式 */
 @import url(style/BlockQueryEmbed.css);/* 嵌入块样式 */
 @import url(style/blockPopover.css);/* 弹出小窗样式 */
+@import url(style/backlinkPanel.css);/* 反链面板 */
 @import url(style/vacancy.css);/*高亮转填空 属性w=w*/
 /* @import url(style/ordered-list.css);有序列表 */
 /* @import url(style/unordered-list.css);无序列表 */
@@ -20,12 +21,14 @@
 @import url(style/link-icon.css);/* 引入网址链接前的图标相关代码 */
 @import url(style/tableSet.css);/* 表格样式调整相关 */
 @import url(style/tagStyle.css);/* 标签格式 */
+@import url(style/breadcrumb.css);/* 面包屑样式（弹出、嵌入块、面板） */
 
 :root {
     /* light主题新增配色 */
     --b3-link:#106ba3;
     --b3-link-lighter:rgb(16, 107, 163, 0.1);
     --b3-list-fold:rgba(95, 99, 104, .4);
+    --b3-block: #f7f7f7;
 
     /* 主色 */
     --b3-theme-primary: #3573f0;

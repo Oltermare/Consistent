@@ -1,0 +1,55 @@
+/* 除了标题其他隐藏文本，鼠标放上才显示 */
+/* 弹出窗、反链面板、嵌入块面板 */
+.block__popover .block__content .block__edit .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child) 
+.protyle-breadcrumb__text,
+.b3-list .protyle .protyle-content .protyle-wysiwyg .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child) 
+.protyle-breadcrumb__text,
+.protyle-wysiwyg__embed .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child) 
+.protyle-breadcrumb__text
+{
+    display: none !important;
+}
+.block__popover .block__content .block__edit .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child):hover
+.protyle-breadcrumb__text,
+.b3-list .protyle .protyle-content .protyle-wysiwyg .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child):hover 
+.protyle-breadcrumb__text,
+.protyle-wysiwyg__embed .protyle-breadcrumb__bar .protyle-breadcrumb__item:not(:first-child):hover
+.protyle-breadcrumb__text{
+    display: initial !important;
+}
+
+/* 标题修改为蓝色 */
+.protyle-breadcrumb__item:first-child {
+    color: var(--b3-link);
+}
+.protyle-breadcrumb__item:first-child svg {
+    color: var(--b3-link);
+}
+
+/* 第一项文字从不省略 */
+.protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child
+.protyle-breadcrumb__text--ellipsis{
+    text-overflow: initial;
+    max-width:fit-content;    
+}
+
+/* 弹出窗：标题折叠的展开 */
+/* .block__content .fn__flex-1 .protyle-breadcrumb .protyle-breadcrumb__bar .protyle-breadcrumb__item:first-child
+.protyle-breadcrumb__text--ellipsis{
+    text-overflow: initial;
+    max-width:fit-content;
+} */
+
+/* 标签面板：标题展开 */
+.fn__flex-column .fn__flex-1 .protyle-breadcrumb .protyle-breadcrumb__bar--nowrap{
+    width: 100%;
+}
+/* .fn__flex-column .fn__flex-1 .protyle-breadcrumb .protyle-breadcrumb__bar--nowrap .protyle-breadcrumb__item:first-child .protyle-breadcrumb__text--ellipsis{
+    max-width: fit-content;
+} */
+
+/* 弹出窗、标签面板：隐藏更多按钮 */
+.block__popover .block__content .block__edit .protyle-breadcrumb .block__icon[aria-label="更多"],
+.fn__flex-column .fn__flex-1 .protyle-breadcrumb .block__icon[aria-label="更多"]{
+    display: none;
+}
