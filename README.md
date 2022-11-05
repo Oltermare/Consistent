@@ -61,15 +61,26 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 ### 鸣谢：
 
-1. js代码、列表转导图等功能来自[royc01/notion-theme](https://github.com/royc01/notion-theme)
+1. js代码、列表转导图等功能来自：[royc01/notion-theme](https://github.com/royc01/notion-theme)
 
-2. 手机适配更新自[Oltermare/Ori-Light-for-Mobile](https://github.com/Oltermare/Ori-Light-for-Mobile)（手机适配过往更新）
+2. 手机适配更新自：[Oltermare/Ori-Light-for-Mobile](https://github.com/Oltermare/Ori-Light-for-Mobile)（手机适配过往更新）
+
+3. 反链模板来自于：[Zuoqiu-Yingyi/siyuan-template-misc](https://github.com/Zuoqiu-Yingyi/siyuan-template-misc)
 
 ---
 
 ## 版本
 
+### 1.0.4：
+
+- 修复正文页面没有设置按钮的bug
+
+- 嵌入块调整为：打开嵌入块面包屑的，增大多个结果间的间距，其他的默认原来间距
+
+- 附带反链模板，复制到data下模板文件夹即可使用
+
 ### 1.0.3:
+
 * [X] 面包屑改造
   * [X] 第一个的面包屑（文章标题）改成蓝色（包括标题，方便在多个面包屑时区分）
   * [X] 嵌入块、弹出窗、反链面板：其他面包屑去除文字，**鼠标放上去时展开**
