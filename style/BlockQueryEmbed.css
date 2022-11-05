@@ -1,7 +1,13 @@
 /* 嵌入块分块*/
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed{
 	border-top: 0px dashed var(--b3-border-color);
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 4px;
+    background-color: var(--b3-theme-surface);
+}
+.protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"][breadcrumb="true"]>.protyle-wysiwyg__embed{
+	border-top: 0px dashed var(--b3-border-color);
+    margin: 0px 0px 16px 0px;
     border-radius: 4px;
     background-color: var(--b3-theme-surface);
 }

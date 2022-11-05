@@ -49,7 +49,8 @@
 } */
 
 /* 弹出窗、标签面板：隐藏更多按钮 */
-.block__popover .block__content .block__edit .protyle-breadcrumb .block__icon[aria-label="更多"],
-.fn__flex-column .fn__flex-1 .protyle-breadcrumb .block__icon[aria-label="更多"]{
+/* ,
+.fn__flex-column .fn__flex-1 .protyle-breadcrumb .block__icon[aria-label="更多"] */
+.block__popover .block__content .block__edit .protyle-breadcrumb .block__icon[aria-label="更多"]{
     display: none;
 }
