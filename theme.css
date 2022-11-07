@@ -18,7 +18,7 @@
 @import url(style/ctrlp.css);/*搜索分栏*/
 @import url(style/ctrlpColor.css);
 /* @import url(style/bq-callout.css);引述样式 */
-@import url(style/link-icon.css);/* 引入网址链接前的图标相关代码 */
+/* @import url(style/link-icon.css);引入网址链接前的图标相关代码 */
 @import url(style/tableSet.css);/* 表格样式调整相关 */
 @import url(style/tagStyle.css);/* 标签格式 */
 @import url(style/breadcrumb.css);/* 面包屑样式（弹出、嵌入块、面板） */
@@ -28,7 +28,7 @@
     --b3-link:#106ba3;
     --b3-link-lighter:rgb(16, 107, 163, 0.1);
     --b3-list-fold:rgba(95, 99, 104, .4);
-    --b3-block: #f7f7f7;
+    --b3-block: #ff0000;
 
     /* 主色 */
     --b3-theme-primary: #3573f0;
@@ -164,12 +164,12 @@
     --b3-protyle-inline-strong-color: #202124;
     --b3-protyle-inline-em-color: #202124;
     --b3-protyle-inline-s-color: #202124;
-    --b3-protyle-inline-link-color: #4285f4;
+    --b3-protyle-inline-link-color: #1384c9;
     --b3-protyle-inline-mark-background: rgb(252, 212, 126);
     --b3-protyle-inline-mark-color: #202124;
-    --b3-protyle-inline-tag-color: #5f6368;
+    --b3-protyle-inline-tag-color: #1384c9;
     /* 引用块 */
-    --b3-protyle-inline-blockref-color: #660e7a;
+    --b3-protyle-inline-blockref-color: #1384c9;
 
     /* PDF */
     --b3-pdf-selection: #d0e9c8;
