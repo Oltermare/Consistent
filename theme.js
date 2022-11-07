@@ -434,13 +434,13 @@ function ClickMonitor () {
 function MenuShow() {
   setTimeout(() => {
     let selectinfo = getBlockSelected()
-      if(selectinfo){
-      let selecttype = selectinfo.type
-      let selectid = selectinfo.id
-      if(selecttype=="NodeList"||selecttype=="NodeTable"||selecttype=="NodeBlockquote"){
+    if(selectinfo){
+        let selecttype = selectinfo.type
+        let selectid = selectinfo.id
+        if(selecttype=="NodeList"||selecttype=="NodeTable"||selecttype=="NodeBlockquote"){
         setTimeout(()=>InsertMenuItem(selectid,selecttype), 0)
-      }
-      setTimeout(()=>InsertMenuItem2(selectid,selecttype), 0)      
+        }
+        setTimeout(()=>InsertMenuItem2(selectid,selecttype), 0)      
     }
   }, 0);
 }
@@ -2549,7 +2549,7 @@ setTimeout(() => {
 
         // showDocumentCreationDate();//为打开文档标题下面显示文档创建日期
 
-        // autoOpenList();//自动展开悬浮窗内折叠列表（第一次折叠）
+        autoOpenList();//自动展开悬浮窗内折叠列表（第一次折叠）
 
         // collapsedListPreview();//折叠列表内容预览查看
 
