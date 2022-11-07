@@ -2439,8 +2439,9 @@ function SubOptionMenu(selectid,selecttype,className = 'b3-menu__submenu') {
     node.appendChild(FillIn(selectid))
     node.appendChild(FillInOff(selectid))
     node.appendChild(MenuLoadStyleButton("tagStyleButton","标签样式切换","tagStyleDistinct","/appearance/themes/Consistent/themeMod/tagStyleDistinct.css"))
-    node.appendChild(MenuLoadStyleButton("linkIconStyleButton","网址前图标切换","linkIconStyle","/appearance/themes/Consistent/themeMod/linkIconDisable.css"))
+    node.appendChild(MenuLoadStyleButton("linkIconStyleButton","网址前图标切换","linkIconStyle","/appearance/themes/Consistent/themeMod/linkIconAble.css"))
     node.appendChild(MenuLoadStyleButton("vacancyButton","全局挖空切换","vacancyStyle","/appearance/themes/Consistent/themeMod/vacancyStyle.css"))
+    node.appendChild(MenuLoadStyleButton("vacancyButton","紧凑文本切换","denseStyle","/appearance/themes/Consistent/themeMod/denseText.css"))
     return node;
 }
 

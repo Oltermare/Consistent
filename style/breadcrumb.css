@@ -20,10 +20,10 @@
 
 /* 标题修改为蓝色 */
 .protyle-breadcrumb__item:first-child {
-    color: var(--b3-link);
+    color: var(--b3-protyle-inline-blockref-color);
 }
 .protyle-breadcrumb__item:first-child svg {
-    color: var(--b3-link);
+    color: var(--b3-protyle-inline-blockref-color);
 }
 
 /* 第一项文字从不省略 */
