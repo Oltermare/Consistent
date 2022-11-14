@@ -47,7 +47,8 @@
     /* 文字颜色 */
     --b3-theme-on-primary: #fff;
     --b3-theme-on-secondary: #fff;
-    --b3-theme-on-background: #202124;
+    /* --b3-theme-on-background: #202124; */
+    --b3-theme-on-background: #202122;
     --b3-theme-on-surface: #5f6368;
     --b3-theme-on-surface-light: rgba(95, 99, 104, .68);
     --b3-theme-on-error: #fff;
@@ -164,14 +165,16 @@
     /* 所见即所得行内元素颜色 */
     --b3-protyle-inline-strong-color: #202124;
     --b3-protyle-inline-em-color: #202124;
-    --b3-protyle-inline-s-color: #202124;
+    --b3-protyle-inline-s-color: #4c4e4d;
     /* #1384c9 */
-    --b3-protyle-inline-link-color: #0E70AB;
+    /* #0E70AB */
+    --b3-protyle-inline-link-color: #0645ad;
     --b3-protyle-inline-mark-background: rgb(252, 212, 126);
     --b3-protyle-inline-mark-color: #202124;
-    --b3-protyle-inline-tag-color: #0E70AB;
+    /* #007C2A */
+    --b3-protyle-inline-tag-color: #0645ad;
     /* 引用块 */
-    --b3-protyle-inline-blockref-color: #0E70AB;
+    --b3-protyle-inline-blockref-color: #0645ad;
 
     /* PDF */
     --b3-pdf-selection: #d0e9c8;

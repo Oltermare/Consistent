@@ -11,7 +11,7 @@
 
 /* 和引用、超链接一样的颜色的格式 */
 .protyle-wysiwyg [data-node-id] span[data-type~=tag] {
-    border-bottom: 2px solid var(--b3-protyle-inline-tag-color);
+    border-bottom: 1px solid var(--b3-protyle-inline-tag-color);
     color: var(--b3-protyle-inline-tag-color);
     transition: var(--b3-transition);
     background-color: transparent;

@@ -1,12 +1,13 @@
 /* 块链接 */
 .protyle-wysiwyg [data-node-id] span[data-type~=block-ref], .protyle-wysiwyg [data-node-id] span[data-type~=file-annotation-ref] {
     color: var(--b3-protyle-inline-blockref-color);
+    /* border-bottom: 1px solid var(--b3-protyle-inline-blockref-color); */
     opacity: 1;
     transition: var(--b3-transition);
 }
 .protyle-wysiwyg[contenteditable=true] span[data-type~=block-ref]:hover, .protyle-wysiwyg[contenteditable=true] span[data-type~=file-annotation-ref]:hover {
     opacity: 1;
-    color: var(--b3-protyle-inline-link-color);
+    border-bottom: 1px solid var(--b3-protyle-inline-blockref-color);
 }
 
 /* 超链接 */
@@ -14,7 +15,7 @@
     color: var(--b3-protyle-inline-link-color);
     cursor: pointer;
     transition: var(--b3-transition);
-    border-bottom: dashed 1px var(--b3-protyle-inline-link-color) ;
+    border-bottom: dotted 1px var(--b3-protyle-inline-link-color) ;
 }
 .protyle-wysiwyg [data-node-id] span[data-type~=a]:hover {
     border-bottom: solid 1px var(--b3-protyle-inline-link-color) ;
