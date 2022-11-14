@@ -1,0 +1,6 @@
+---
+
+# <span data-type="strong text">&gt;&gt;反链&gt;&gt;</span>{: style="font-size: 16px;"}
+
+{{SELECT * _esc_newline_FROM blocks as b0 _esc_newline_WHERE ( _esc_newline_	b0.id IN ( _esc_newline_		SELECT r1.block_id _esc_newline_		FROM refs as r1 _esc_newline_		WHERE r1.def_block_id = '.action{.id}' _esc_newline_	) _esc_newline_	AND ( _esc_newline_		b0.type = 'h' _esc_newline_		OR b0.type = 'p' _esc_newline_		OR b0.type = 't' _esc_newline_	) _esc_newline_	AND b0.parent_id NOT IN ( _esc_newline_		SELECT b1.id _esc_newline_		FROM blocks as b1 _esc_newline_		WHERE b1.type = 'i' _esc_newline_		) _esc_newline_	) _esc_newline_	OR ( _esc_newline_		b0.id IN ( _esc_newline_			SELECT b2.parent_id _esc_newline_			FROM blocks as b2 _esc_newline_			WHERE b2.id IN ( _esc_newline_				SELECT r2.block_id _esc_newline_				FROM refs as r2 _esc_newline_				WHERE r2.def_block_id = '.action{.id}' _esc_newline_			) _esc_newline_		) _esc_newline_		AND b0.type = 'i' _esc_newline_	) _esc_newline_ORDER BY b0.updated DESC;}}
+{: breadcrumb="true" custom-render="scroll"}
