@@ -56,3 +56,13 @@
 .block__popover .block__content .block__edit .protyle-breadcrumb .block__icon[aria-label="更多"]{
     display: none;
 }
+
+/* 正文面包屑增大字体 */
+/* #layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.layout-tab-container.fn__flex-1 > div:nth-child(n) > div.protyle-breadcrumb > div{
+    font-size: 16px;
+} */
+
+/* 正文第一个按钮增大 */
+#layouts > div.fn__flex.fn__flex-1 > div.layout__center.fn__flex.fn__flex-1 > div > div > div.layout-tab-container.fn__flex-1 > div.fn__flex-1.protyle > div.protyle-breadcrumb > div > span.protyle-breadcrumb__item:first-child > svg{
+    width:40px;
+}

@@ -140,11 +140,11 @@
     --b3-protyle-inline-strong-color: #e8eaed;
     --b3-protyle-inline-em-color: #e8eaed;
     --b3-protyle-inline-s-color: #e8eaed;
-    --b3-protyle-inline-link-color: #8ab4f8;
-    --b3-protyle-inline-mark-background: rgb(50, 89, 61);
+    --b3-protyle-inline-link-color: #759AD4;
+    --b3-protyle-inline-mark-background: #32593d;
     --b3-protyle-inline-mark-color: #e8eaed;
-    --b3-protyle-inline-tag-color: #8ab4f8;
-    --b3-protyle-inline-blockref-color: #8ab4f8;
+    --b3-protyle-inline-tag-color: #759AD4;
+    --b3-protyle-inline-blockref-color: #759AD4;
 
     /* PDF */
     --b3-pdf-selection: #779170;
