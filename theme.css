@@ -61,9 +61,9 @@
     --b3-font-family-math: KaTeX_Math;
 
     /* 顶部工具栏 */
-    --b3-toolbar-background: #292a2d;
-    --b3-toolbar-blur-background: #3f4041;
-    --b3-toolbar-color: #9aa0a6;
+    --b3-toolbar-background: #f7f7f7;
+    --b3-toolbar-blur-background: #dddddd;
+    --b3-toolbar-color: #5f6368;
 
     /* 线条 */
     --b3-border-color: rgba(0, 0, 0, .1);
