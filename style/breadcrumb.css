@@ -18,12 +18,14 @@
     display: initial !important;
 }
 
-/* 标题修改为蓝色 */
+/* 标题修改为黑色 */
 .protyle-breadcrumb__item:first-child {
-    color: var(--b3-protyle-inline-blockref-color);
+    /* color: var(--b3-protyle-inline-tag-color); */
+    color: var(--b3-theme-on-background);
+    font-weight: bold;
 }
-.protyle-breadcrumb__item:first-child svg {
-    color: var(--b3-protyle-inline-blockref-color);
+.protyle-breadcrumb__item:first-child svg { 
+    color: var(--b3-theme-on-background);
 }
 
 /* 第一项文字从不省略 */
