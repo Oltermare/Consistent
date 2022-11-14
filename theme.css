@@ -38,7 +38,8 @@
     --b3-theme-secondary: #f3a92f;
     --b3-theme-background: #fff;
     --b3-theme-background-light: #dfe0e1;
-    --b3-theme-surface: #f7f8fa;
+    /* --b3-theme-surface: #f7f8fa; */
+    --b3-theme-surface: #f7f7f7;
     --b3-theme-surface-light: rgba(243, 243, 243, .86);
     --b3-theme-surface-lighter: rgba(0, 0, 0, .06);
     --b3-theme-error: #d23f31;
@@ -164,12 +165,13 @@
     --b3-protyle-inline-strong-color: #202124;
     --b3-protyle-inline-em-color: #202124;
     --b3-protyle-inline-s-color: #202124;
-    --b3-protyle-inline-link-color: #1384c9;
+    /* #1384c9 */
+    --b3-protyle-inline-link-color: #0E70AB;
     --b3-protyle-inline-mark-background: rgb(252, 212, 126);
     --b3-protyle-inline-mark-color: #202124;
-    --b3-protyle-inline-tag-color: #1384c9;
+    --b3-protyle-inline-tag-color: #0E70AB;
     /* 引用块 */
-    --b3-protyle-inline-blockref-color: #1384c9;
+    --b3-protyle-inline-blockref-color: #0E70AB;
 
     /* PDF */
     --b3-pdf-selection: #d0e9c8;
