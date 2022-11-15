@@ -7,10 +7,10 @@
     --b3-list-fold:rgba(154, 160, 166, .4);
 
     /* 主色 */
-    --b3-theme-primary: #3573f0;
-    --b3-theme-primary-light: rgba(53, 115, 240, 0.72);
-    --b3-theme-primary-lighter: rgba(53, 115, 240, 0.48);
-    --b3-theme-primary-lightest: rgba(53, 115, 240, 0.24);
+    --b3-theme-primary: #759ad4;
+    --b3-theme-primary-light: rgba(117, 154, 212, 0.72);
+    --b3-theme-primary-lighter: rgba(117, 154, 212, 0.38);
+    --b3-theme-primary-lightest: rgba(117, 154, 212, 0.15);
     --b3-theme-secondary: #f3a92f;
     --b3-theme-background: #212224;
     --b3-theme-background-light: #353637;
