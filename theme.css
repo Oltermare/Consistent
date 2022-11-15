@@ -31,10 +31,11 @@
     --b3-block: #ff0000;
 
     /* 主色 */
-    --b3-theme-primary: #3573f0;
-    --b3-theme-primary-light: rgba(53, 115, 240, 0.54);
-    --b3-theme-primary-lighter: rgba(53, 115, 240, 0.38);
-    --b3-theme-primary-lightest: rgba(53, 115, 240, 0.12);
+    /* --b3-theme-primary: #3573f0; */
+    --b3-theme-primary: rgb(51, 102, 204);
+    --b3-theme-primary-light: rgba(51, 102, 204, 0.54);
+    --b3-theme-primary-lighter: rgba(51, 102, 204, 0.38);
+    --b3-theme-primary-lightest: rgba(51, 102, 204, 0.08);
     --b3-theme-secondary: #f3a92f;
     --b3-theme-background: #fff;
     --b3-theme-background-light: #dfe0e1;
