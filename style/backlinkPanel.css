@@ -1,10 +1,21 @@
-/* 文本部分加大与下方间距 增加边界 */
+/* 文本部分加大与下方间距 增加边界 增加边框 */
 .backlinkList .b3-list .protyle,
 .backlinkMList .b3-list .protyle{
-    /* box-shadow: 0px 8px 8px var(--b3-list-fold); */
-    margin: 0px 0px 8px 0px;
-    border-bottom: 2px solid var(--b3-border-color);
+    margin: 0px 8px 16px 8px;
+    border: 1px solid var(--b3-border-color);
+    border-radius: 4px;
     background-color: var(--b3-theme-surface);
+}
+
+/* 文本框与边界间距缩小 */
+.backlinkList.fn__flex-1 > ul > div:nth-child(n) > div.protyle-content > div{
+    padding: 4px 4px 4px 8px !important;
+}
+
+/* 反链面板改为白色背景 */
+.backlinkList,
+.backlinkMList{
+    background-color: var(--b3-theme-background);
 }
 
 /* 取消选中背景 */
@@ -33,4 +44,5 @@
 #layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child){
     border-top: 1px solid var(--b3-border-color);
     margin-top:6px !important;
+    padding-top: 6px;
 }
