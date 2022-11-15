@@ -789,6 +789,19 @@ function autoOpenList() {
             
         }
 
+        // 1.0.6新增
+        // 反链面板自动展开
+        var backlinkList = document.querySelectorAll(".backlinkList.fn__flex-1>.b3-list>.protyle>.protyle-content>.protyle-wysiwyg>.li");
+        for (let index = 0; index < backlinkList.length; index++) {
+            const backlinkElement = backlinkList[index];
+            if (backlinkElement != null && backlinkElement.getAttribute("data-type") == "NodeListItem" && backlinkElement.getAttribute("fold") == 1){
+                if (backlinkElement.getAttribute("foldTag") != null) return;
+                backlinkElement.setAttribute("fold", 0);
+                backlinkElement.setAttribute("foldTag", true);
+            }
+        }   
+
+        // 搜索界面自动展开
         var searchPreview = document.querySelector("#searchPreview [data-doc-type='NodeListItem'].protyle-wysiwyg.protyle-wysiwyg--attr>div:nth-child(1)");
         if (searchPreview != null && searchPreview.getAttribute("data-type") == "NodeListItem" && searchPreview.getAttribute("fold") == 1) {
             if (searchPreview.getAttribute("foldTag") != null) return;//判断是否存在标记
@@ -796,6 +809,7 @@ function autoOpenList() {
             searchPreview.setAttribute("foldTag", true);
         }
 
+        // 聚焦界面自动展开
         var contentLIst = document.querySelectorAll(".layout-tab-container>.fn__flex-1.protyle:not(.fn__none) [data-doc-type='NodeListItem'].protyle-wysiwyg.protyle-wysiwyg--attr>div:nth-child(1)");
         for (let index = 0; index < contentLIst.length; index++) {
             const element = contentLIst[index];
@@ -2565,7 +2579,8 @@ function FillIn(selectid){
 
 
 
-
+// --------------反链面板自动展开-------------------------------
+// wait
 
 
 
