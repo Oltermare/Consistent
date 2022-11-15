@@ -28,9 +28,9 @@
     display: none;
 }
 
-/* 同一文档多个反链：在第二个开始的面包屑上方增加分界线 */
+/* 同一文档多个反链：在第二个开始的面包屑上方增加分界线、增加间距 */
 #layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child),
 #layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child){
     border-top: 1px solid var(--b3-border-color);
-    margin-top:4px !important;
+    margin-top:6px !important;
 }
