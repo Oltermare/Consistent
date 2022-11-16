@@ -2,14 +2,15 @@
 .backlinkList .b3-list .protyle,
 .backlinkMList .b3-list .protyle{
     margin: 0px 8px 16px 8px;
-    border: 1px solid var(--b3-border-color);
+    /* border: 1px solid var(--b3-border-color); */
     border-radius: 4px;
     background-color: var(--b3-theme-surface);
 }
 
 /* 文本框与边界间距缩小 */
-.backlinkList.fn__flex-1 > ul > div:nth-child(n) > div.protyle-content > div{
-    padding: 4px 4px 4px 8px !important;
+.backlinkList.fn__flex-1 > ul > div:nth-child(n) > div.protyle-content > div,
+.backlinkMList.fn__flex-1 > ul > div:nth-child(n) > div.protyle-content > div{
+    padding: 4px 4px 4px 12px !important;
 }
 
 /* 反链面板改为白色背景 */
@@ -19,14 +20,14 @@
 }
 
 /* 取消选中背景 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkList.fn__flex-1 > ul > li.b3-list-item.b3-list-item--focus,
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > li.b3-list-item.b3-list-item--focus{
-    background-color: var(--b3-theme-background);
+.backlinkList.fn__flex-1 > ul > li.b3-list-item.b3-list-item--focus,
+.backlinkMList.fn__flex-1 > ul > li.b3-list-item.b3-list-item--focus{
+    background-color: var(--b3-theme-background) !important;
 }
 
 /* 加粗文章标题、增加边框 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkList.fn__flex-1 > ul > li.b3-list-item,
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > li.b3-list-item{
+.backlinkList.fn__flex-1 > ul > li.b3-list-item,
+.backlinkMList.fn__flex-1 > ul > li.b3-list-item{
     font-weight: bold;
     margin-top: 8px !important;
     border: 1px solid var(--b3-border-color);
@@ -34,14 +35,14 @@
 }
 
 /* 取消文章图标 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkList.fn__flex-1 > ul > li:nth-child(n) > svg,
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > li:nth-child(n) > svg{
+.backlinkList.fn__flex-1 > ul > li:nth-child(n) > svg,
+.backlinkMList.fn__flex-1 > ul > li:nth-child(n) > svg{
     display: none;
 }
 
 /* 同一文档多个反链：在第二个开始的面包屑上方增加分界线、增加间距 */
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child),
-#layouts > div.fn__flex.fn__flex-1 > div:nth-child(n) > div:nth-child(n) > div > div.layout-tab-container.fn__flex-1 > div > div.backlinkMList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child){
+.backlinkList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child),
+.backlinkMList.fn__flex-1 > ul > div > div.protyle-content > div > div.protyle-breadcrumb__bar.protyle-breadcrumb__bar--nowrap:not(:first-child){
     border-top: 1px solid var(--b3-border-color);
     margin-top:6px !important;
     padding-top: 6px;

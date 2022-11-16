@@ -823,47 +823,6 @@ function autoOpenList() {
     }, 500)
 }
 
-// 目前暂时能用了，但是好像后面的判断还没调整
-function autoOpenList2() {
-
-    setInterval(() => {
-        //找到所有的嵌入子块
-        var Preview2 = document.querySelectorAll("[class=\"protyle-wysiwyg__embed\"]");
-	
-        //如果发现首行是折叠列表就展开并打上标记
-        if (Preview2.length != 0) {
-            for (let index = 0; index < Preview2.length; index++) {
-                const element = Preview2[index].children[1];
-                if (element == null) continue;
-                if (element.className != "li") continue;//判断是否是列表
-                if (element.getAttribute("foldTag") != null) continue;//判断是否存在标记
-                if (element.getAttribute("foid") == 0) continue;//判断是折叠
-
-                element.setAttribute("fold", 0);
-                element.setAttribute("foldTag", true);
-            }
-            
-        }
-
-        // var searchPreview = document.querySelector("#searchPreview [data-doc-type='NodeListItem'].protyle-wysiwyg.protyle-wysiwyg--attr>div:nth-child(1)");
-        // if (searchPreview != null && searchPreview.getAttribute("data-type") == "NodeListItem" && searchPreview.getAttribute("fold") == 1) {
-        //     if (searchPreview.getAttribute("foldTag") != null) return;//判断是否存在标记
-        //     searchPreview.setAttribute("fold", 0);
-        //     searchPreview.setAttribute("foldTag", true);
-        // }
-
-        // var contentLIst = document.querySelectorAll(".layout-tab-container>.fn__flex-1.protyle:not(.fn__none) [data-doc-type='NodeListItem'].protyle-wysiwyg.protyle-wysiwyg--attr>div:nth-child(1)");
-        // for (let index = 0; index < contentLIst.length; index++) {
-        //     const element = contentLIst[index];
-        //     if (element != null && element.getAttribute("data-type") == "NodeListItem" && element.getAttribute("fold") == 1) {
-        //         if (element.getAttribute("foldTag") != null) return;//判断是否存在标记
-        //         element.setAttribute("fold", 0);
-        //         element.setAttribute("foldTag", true);
-        //     }
-        // }
-
-    }, 500)
-}
 
 
 /**----------------------------------列表折叠内容预览查看---------------------------------- */
