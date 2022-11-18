@@ -20,3 +20,9 @@
 .protyle-wysiwyg [data-node-id] span[data-type~=a]:hover {
     border-bottom: solid 1px var(--b3-protyle-inline-link-color) ;
 }
+
+/* 虚拟引用 */
+.protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref] {
+    border-bottom: 0.5px dashed var(--b3-theme-background-light);
+    transition: var(--b3-transition);
+}
