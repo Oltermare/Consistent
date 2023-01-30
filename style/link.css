@@ -23,6 +23,6 @@
 
 /* 虚拟引用 */
 .protyle-wysiwyg [data-node-id] span[data-type=virtual-block-ref] {
-    border-bottom: 0.5px dashed var(--b3-theme-background-light);
+    border-bottom: 0.5px dashed var(--b3-scroll-color);
     transition: var(--b3-transition);
 }
