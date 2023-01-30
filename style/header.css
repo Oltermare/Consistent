@@ -3,8 +3,14 @@
     text-align: center;
 }
 
-/* 标题2增加虚线 */
+/* 标题2增加虚线 增加上边距*/
 .protyle-wysiwyg [data-node-id].h2,.b3-typography h2 {
     /* border-bottom: 1px dashed #dfe0e1; */
     border-bottom: 1px dashed var(--b3-scroll-color);
+    margin-top: 20px;
+}
+
+/* 标题3增加上边距 */
+.protyle-wysiwyg [data-node-id].h3,.b3-typography h3 {
+    margin-top: 10px;
 }
