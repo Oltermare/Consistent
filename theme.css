@@ -15,13 +15,14 @@
 @import url(style/list2tableColor.css);
 @import url(style/list2board.css);/*列表转看板*/
 @import url(style/list2boardColor.css);
-@import url(style/ctrlp.css);/*搜索分栏*/
-@import url(style/ctrlpColor.css);
+/* @import url(style/ctrlp.css);搜索分栏
+@import url(style/ctrlpColor.css); */
 /* @import url(style/bq-callout.css);引述样式 */
 /* @import url(style/link-icon.css);引入网址链接前的图标相关代码 */
 @import url(style/tableSet.css);/* 表格样式调整相关 */
 @import url(style/tagStyle.css);/* 标签格式 */
 @import url(style/breadcrumb.css);/* 面包屑样式（弹出、嵌入块、面板） */
+@import url(style/toolbartext.css);/*工具栏文字颜色*/
 
 :root {
     /* light主题新增配色 */
@@ -65,6 +66,7 @@
     --b3-toolbar-background: #f7f7f7;
     --b3-toolbar-blur-background: #dddddd;
     --b3-toolbar-color: #5f6368;
+    --b3-toolbar-hover:#dddddd;
 
     /* 线条 */
     --b3-border-color: rgba(0, 0, 0, .1);
