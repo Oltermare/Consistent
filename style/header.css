@@ -1,6 +1,7 @@
 /* 标题1居中 */
 .protyle-wysiwyg [data-node-id].h1 ,.b3-typography h1{
     text-align: center;
+    margin-top: 30px;
 }
 
 /* 标题2增加虚线 增加上边距*/
