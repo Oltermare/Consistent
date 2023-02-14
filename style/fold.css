@@ -55,13 +55,6 @@
 /* 有序和任务列表 */
 .protyle-wysiwyg [data-node-id].li[fold="1"][data-subtype="t"]>.protyle-action:after,
 .protyle-wysiwyg [data-node-id].li[fold="1"][data-subtype="o"]>.protyle-action:after {
-    content: "";
-    position: absolute;
     border-radius: 2px;
-    top: 50%;
-    transition: var(--b3-transition);
-    left: 50%;
-    background-color: var(--b3-list-fold); 
-    /* box-shadow: 0 0 0 2px var(--b3-list-fold) ; */
-    /* box-shadow: 0 0 0 2px var(--b3-list-fold) inset; */
+    box-shadow: 0 0 0 3px var(--b3-list-fold) ;
 }
