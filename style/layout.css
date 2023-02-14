@@ -1,0 +1,25 @@
+/* 取消调整界面大小时过度动画 */
+.protyle-wysiwyg {
+    transition: none;
+}
+
+/* 工作空间简化 */
+#barWorkspace {
+    height: 32px;
+    padding: 0 2px;
+}
+#barWorkspace .toolbar__text {
+    width: 16px;
+    line-height: 32px;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: pre-wrap;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.toolbar__item svg.toolbar__svg {
+    opacity: 1;
+    margin-top: 10px;
+}
