@@ -14,9 +14,9 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 **桌面端效果：**
 
-![image.png](https://s2.loli.net/2022/11/14/8q9Thz2YHvOEPry.png)
+![Snipaste_2023-02-15_11-29-14](assets/Snipaste_2023-02-15_11-29-14.png)
 
-![image.png](https://s2.loli.net/2022/11/14/FLdvO5EnB6KlQmr.png)
+![Snipaste_2023-02-15_11-29-30](assets/Snipaste_2023-02-15_11-29-30.png)
 
 ![image.png](https://s2.loli.net/2022/11/14/drobt8ias4U2eT1.png)
 
@@ -47,7 +47,7 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 1. js代码、列表转导图等功能来自：[royc01/notion-theme](https://github.com/royc01/notion-theme)
 2. 手机适配更新自：[Oltermare/Ori-Light-for-Mobile](https://github.com/Oltermare/Ori-Light-for-Mobile)（手机适配过往更新）
-3. 反链模板来自于：[Zuoqiu-Yingyi/siyuan-template-misc](https://github.com/Zuoqiu-Yingyi/siyuan-template-misc)
+3. 反链模板参考：[Zuoqiu-Yingyi/siyuan-template-misc](https://github.com/Zuoqiu-Yingyi/siyuan-template-misc)
 
 ---
 
