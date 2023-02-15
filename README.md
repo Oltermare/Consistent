@@ -14,9 +14,9 @@ Consistent主题修改自官方主题，主要有以下特点，前排提示佛�
 
 **桌面端效果：**
 
-![Snipaste_2023-02-15_11-29-14](assets/Snipaste_2023-02-15_11-29-14.png)
+![Snipaste_2023-02-16_01-06-03](assets/Snipaste_2023-02-16_01-06-03.png)
 
-![Snipaste_2023-02-15_11-29-30](assets/Snipaste_2023-02-15_11-29-30.png)
+![Snipaste_2023-02-16_01-06-21](assets/Snipaste_2023-02-16_01-06-21.png)
 
 ![image.png](https://s2.loli.net/2022/11/14/drobt8ias4U2eT1.png)
 
