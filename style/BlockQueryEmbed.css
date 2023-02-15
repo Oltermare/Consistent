@@ -21,16 +21,20 @@
 /* 嵌入块内标题修改 */
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h1{
     font-size: 1.4em;
+    margin: 4px 0 ;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h2{
     border-bottom: 0px;
     font-size: 1.3em;
+    margin: 4px 0 ;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h3{
     font-size: 1.2em;
+    margin: 4px 0 ;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type="NodeBlockQueryEmbed"]>.protyle-wysiwyg__embed>.h4{
     font-size: 1.1em;
+    margin: 4px 0 ;
 }
 
 /* 面包屑修改见 breadcrumb.css */
