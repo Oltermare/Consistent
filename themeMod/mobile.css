@@ -271,6 +271,27 @@ button, input, select, textarea {
     padding-bottom: 24px;
 }
 
+/* --------------------同步情况弹出窗 ----------------------------- */
+/* 添加透明 只保留按钮 放在右下角 */
+#transactionTip {
+    top: unset;
+    right: 5px;
+    left: unset;
+    bottom: 50px;
+    background: transparent;
+    border-radius: 2px;
+    padding: 2px;
+    box-shadow: unset;
+    border: unset;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+#transactionTip button {
+    line-height: 25px;
+    visibility: visible;
+}
+
 /* ----------------------以下是个人常用效果----------------------------- */
 /* 高亮挖空效果（属性w=w）*/
 
