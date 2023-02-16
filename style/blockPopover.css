@@ -2,6 +2,7 @@
 .block__popover{
     width: 30vw;
     min-height: 270px;
+    min-width: 270px;
 }
 /* 顶部栏缩小 */
 body > div.block__popover.block__popover--move.block__popover--open > div.block__icons.block__icons--border{
