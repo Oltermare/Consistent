@@ -2019,7 +2019,7 @@ function getnotionToolbar() { return document.getElementById("notionToolbar"); }
 
 /**简单判断目前思源是否是手机模式 */
 function isPhone() {
-    return document.getElementById("toolbar") == null;
+    return document.getElementById("toolbarMore") != null;
 }
 
 
