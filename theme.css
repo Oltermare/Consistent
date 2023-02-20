@@ -173,7 +173,8 @@
     /* #1384c9 */
     /* #0E70AB */
     --b3-protyle-inline-link-color: #0645ad;
-    --b3-protyle-inline-mark-background: rgb(252, 212, 126);
+    /* --b3-protyle-inline-mark-background: rgb(252, 212, 126); */
+    --b3-protyle-inline-mark-background: rgb(255 237 201);;
     --b3-protyle-inline-mark-color: #202124;
     /* #007C2A */
     --b3-protyle-inline-tag-color: #0645ad;
