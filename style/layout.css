@@ -23,3 +23,22 @@
     opacity: 1;
     margin-top: 10px;
 }
+
+/* 标签调整 背景色*/
+/* .layout-tab-bar {
+    background-color: var(--b3-toolbar-background);
+} */
+
+/* 标签调整 行高 */
+.layout-tab-bar .item__close {
+    padding: 4px 8px 4px 0;
+}
+.layout-tab-bar .item {
+    min-height: 32px;
+}
+
+/* 标签之间添加分割线 */
+/* .layout-tab-bar .item::after {
+
+} */
+
