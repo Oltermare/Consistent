@@ -24,6 +24,7 @@
 @import url(style/breadcrumb.css);/* 面包屑样式（弹出、嵌入块、面板） */
 @import url(style/toolbartext.css);/*工具栏文字颜色*/
 @import url(style/layout.css);/* 界面调整 */
+@import url(style/taskdone.css); /*任务完成*/
 
 :root {
     /* light主题新增配色 */
