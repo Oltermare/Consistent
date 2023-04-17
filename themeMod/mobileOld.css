@@ -1,0 +1,307 @@
+/* 手机端代码:将这部分代码复制到theme.css文档最后，若还有其他问题，请注意样式是否被覆盖 */
+
+/* 注意：如果出现顶部有灰色块挡住标题，最好取消标题居中效果，或者手动调整padding */
+
+/* 1.2.1 */
+
+/* ----------------------------------整体字体大小---------------------------- */
+body {
+    font-size: 15px;
+}
+
+button, input, select, textarea {
+    font-size: 15px;
+}
+
+/* ----------------------------------顶部栏 toolbar -------------------- */
+/* 加高、背景颜色修改为默认 */
+.toolbar {
+    height: 50px;
+    /* background: var(--b3-theme-background); */
+}
+
+/* ！！！！！！！！！！！！ */
+/* 标题增大字体、居中、去除边框 */
+
+/* option1: 标题不居中效果使用以下，适配性更强 */
+/* .b3-text-field[id="toolbarName"] {
+    box-shadow: none;
+    font-size: 18px;
+    text-align: left;
+} */
+
+/* option2: 使标题在页面居中使用以下两段代码，并且需要手动调整padding，不能把按钮挤出去 */
+.b3-text-field[id="toolbarName"] {
+    box-shadow: none;
+    font-size: 18px;
+    text-align: center;
+} 
+
+.toolbar__title {
+    padding: 4px 0px 4px 40px;
+}
+
+/* 增大按钮 */
+.toolbar__icon {
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    flex-shrink: 0;
+    margin: 4px;
+    /* color: var(--b3-theme-on-surface); */
+}
+
+/* -------------------------------面包屑----------------------- */
+/* 降低透明度 */
+.protyle-breadcrumb {
+    opacity: 0.5;
+}
+
+/* --------------------------------侧弹出面板------------------- */
+/* 高38px */
+.b3-list-item {
+    line-height: 38px;
+}
+/* 箭头触摸面积改为38*38 */
+.b3-list-item__toggle {
+    height: 34px;
+    width: 34px;
+    padding: 2px;
+}
+/* 箭头相应扩充 */
+.b3-list-item__arrow {
+    flex-shrink: 0;
+    height: 10px;
+    width: 10px;
+    padding: 12px;
+}
+/* 其他按钮适当增大面积 */
+.b3-list-item__action {
+    flex-shrink: 0;
+    align-items: center;
+    /* color: var(--b3-theme-on-surface); */
+    height: 22px;
+    padding: 0 6px;
+    margin-left: 4px;
+    display: flex;
+}
+/* 右方菜单调整合适大小 */
+.b3-list-item--big {
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+/* -------------------------------------编辑工具栏----------------------- */
+/* 增宽按钮 */
+#keyboardToolbar button {
+    background: rgba(0,0,0,0);
+    padding: 0;
+    border: 0;
+    min-width: 49px;
+}
+/* z应该比侧面板小,溢出部分改为滚动 */
+#keyboardToolbar {
+    z-index: 1;
+    overflow: auto;
+}
+/* 缩小按钮上下高度 */
+#keyboardToolbar button svg {
+    /* height: 18px;
+    width: 18px; */
+    padding: 0px 4px 0px 4px;
+    /* margin: 4px;
+    color: var(--b3-theme-on-surface); */
+}
+
+/* -------------------------------------插入菜单hint-------------------- */
+/* 修改为一页显示两列,滚动 */
+.hint--menu {
+    overflow: auto;
+    columns: 2;
+    column-rule: 1px outset var(--b3-border-color);
+}
+
+/* ----------------------------------------浮动工具条---------------------- */
+/* 改为透明、溢出部分滚动 */
+.protyle-toolbar {
+    opacity: 0.9;
+    overflow: auto;
+    max-width: 100%;
+}
+/* 增大宽度 */
+.protyle-toolbar__item {
+    min-width: 49px;
+}
+
+/* --------------------------------------状态栏---------------------------- */
+/* 降低透明度、去除背景放在最右下角 */
+.status {
+    position: fixed;
+    bottom: -30px;
+    right: 10px;
+    width: 30%;
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+/* -----------------------------------弹出通用菜单---------------------- */
+/* 行高增大 */
+.b3-menu__item {
+    padding: 0 8px 0 8px;
+    line-height: 38px;
+    border: 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* 如果菜单高度超过屏幕，使元素在第二栏溢出 */
+/* .b3-menu, .protyle-util {
+    position: fixed;
+    padding: 4px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100%;
+    display: flex;
+} */
+
+/* 1029修改 */
+/* 如果菜单高度超过屏幕，可以滚动，子元素强制显示在上层位置 */
+.b3-menu, .protyle-util {
+    position: fixed;
+    padding: 4px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    max-height: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+.b3-menu__submenu {
+    position: fixed !important;
+    top: inherit !important;
+    left: inherit !important;
+    max-height: 100% !important;
+}
+
+/* 避免颜色问题，避免子菜单被溢出元素覆盖 */
+.b3-menu__item--show .b3-menu__submenu {
+    mix-blend-mode: normal;
+    z-index: 211 !important;
+}
+
+/* 外观设置中颜色方块增大 */
+.b3-color__square {
+    height: 32px;
+    margin-right: 4px;
+    width: 32px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------------------------字体颜色选择界面------------------ */
+/* 调整字体 */
+.protyle-font {
+    font-size: 15px;
+}
+
+/* 溢出元素可以滚动 */
+.protyle-util {
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+    display: flex;
+    left: 0px !important;
+}
+
+/* 增大选择按钮 */
+.protyle-font__style {
+    background-color: rgba(0,0,0,0);
+    margin-right: 4px;
+    padding: 0 14px;
+    font-size: 16px;
+    height: 38px;
+}
+
+/* ----------------------------日记--------------------- */
+/* 增大所有选择框的高度 */
+.b3-select {
+    height: 38px;
+}
+/* 增大按钮 */
+.b3-button {
+    line-height: 32px;
+    padding: 4px 8px;
+}
+/* 使关闭按钮更显著 */
+/* .fn__a {
+    color: var(--b3-theme-primary);
+} */
+
+/* -------------------------段前按钮---------------------------- */
+/* 非折叠的按钮降低透明度 */
+.protyle-gutters button:not([data-type="fold"]) {
+    opacity: 0.5;
+}
+
+/* 避免按钮太靠近手机边缘 */
+.protyle-gutters button {
+    border: 0;
+    padding: 4px 4px 4px 10px;
+}
+
+/* .protyle-gutters svg {
+    height: 14px;
+    color: var(--b3-theme-on-surface-light);
+    width: 14px;
+    float: right;
+    transition: var(--b3-transition);
+} */
+
+/* --------------------题头表情和图片------------------------------ */
+/* 缩减题头部分的高度 */
+.protyle-background {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+/* --------------------同步情况弹出窗 ----------------------------- */
+/* 添加透明 只保留按钮 放在右下角 */
+#transactionTip {
+    top: unset;
+    right: 5px;
+    left: unset;
+    bottom: 50px;
+    background: transparent;
+    border-radius: 2px;
+    padding: 2px;
+    box-shadow: unset;
+    border: unset;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+#transactionTip button {
+    line-height: 25px;
+    visibility: visible;
+}
+
+/* ----------------------以下是个人常用效果----------------------------- */
+/* 高亮挖空效果（属性w=w）*/
+
+/* .protyle-wysiwyg [data-node-id][custom-w~="w"] span[data-type~=mark]{
+    color: transparent;
+    border-bottom: 2px solid #888;
+    transition: color 0.1s ease-in-out !important;
+	background-image: none;
+}
+.protyle-wysiwyg [data-node-id][custom-w~="w"] span[data-type~=mark]:hover{
+    color: var(--b3-theme-on-background);
+	transition: color 0.1s ease-in-out; 
+} */
